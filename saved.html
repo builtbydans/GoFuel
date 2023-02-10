@@ -11,15 +11,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <link href='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css' rel='stylesheet' />
   <title>GoFuel</title>
 </head>
 
 <body>
   <!-- Navbar-->
   <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" id="unico" href="index.html">GoFuel <img id="water-drop" src="./assets/images/droplet-128.png" alt="water-drop"/></a>
-    <button class="navbar-toggler" type="button" onclick="saveSearch()" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" id="unico" href="index.html" onclick="document.reload()">GoFuel <img id="water-drop" src="./assets/images/droplet-128.png" alt="water-drop"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span id="burger-icon" class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -44,37 +43,22 @@
   </nav>
   <!-- End Of Navbar -->
 
-  <!-- Mapbox API -->
+  <!-- Saved Searches -->
   <main>
     <section>
-      <div>
-        <input
-        type="search"
-        id="zip-code-input"
-        class="search-bar"
-        placeholder="Enter your ZIP Code e.g. 80210"
-        required
-        />
-        <button class="search-btn" id="submit-zip-code">SEARCH</button>
-      </div>
-    </section>
+      <div class="wrapper">
+        <h1>Saved Searches</h1>
+        <ol id="saved-searches"></ol>
 
-    <section id="map-area">
-      <div id="static-map"></div>
-      <div class="row">
-        <div class="col" id="map"></div>
-        <div class="col-sm-4" id="stations">
-          <!-- Added via jQuery in script.js -->
-          <div id="fuelCard"></div>
-        </div>
+        <a href="index.html"><button>Go Back</button></a>
+        <button id="clear">Clear Searches</button>
       </div>
     </section>
   </main>
-  <!-- end Mapbox -->
+  <!-- end Saved Searches -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js'></script>
   <script src="./assets/js/keys.js"></script>
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/saved.js"></script>
 </body>
 </html>

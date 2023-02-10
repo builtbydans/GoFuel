@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class=>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/images/droplet-128.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css' rel='stylesheet' />
+  <title>GoFuel</title>
+</head>
+
+<body>
+  <!-- Navbar-->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" id="unico" href="index.html" onclick="document.reload()">GoFuel <img id="water-drop" src="./assets/images/droplet-128.png" alt="water-drop"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span id="burger-icon" class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul id="nav-links" class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="saved.html">Saved Searches</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="article.html">Fuel Tips</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Average US Prices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Report A Price</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Of Navbar -->
+
+  <!-- Mapbox API -->
+  <main>
+    <section class="article">
+      <h1 class="heading">
+        How to save fuel in your car: money-saving tips for 2023
+      </h1>
+      <h3 class="heading">
+        Rising petrol prices are hitting motorists hard, but these
+        cinch-verified tips can help you reduce your car petrol bills - and
+        improve your driving while you're at it
+      </h3>
+      <img
+        id="carimg"
+        src="/assets/images/car1.webp"
+        alt="picture showing car"
+      />
+      <div class="content">
+        <h3 class="heading">Drive more efficiently</h3>
+        <p>
+          Don’t worry, it’s not about driving at a snail’s pace – going slow
+          can often mean lower gears and higher revs. Instead, simply driving
+          smoothly is better for your fuel consumption.<br />
+
+          <br />In fact, most cars return the best economy at around 45-55mph.
+          Driving too fast or too slow on a road where it’s legal and safe to
+          travel at a higher speed can be detrimental to fuel efficiency.<br />
+
+          <br />Of course, it’s always best to drive at normal, legal speeds.
+          But try to time gear changes to perfection, never rev madly to
+          accelerate and avoid harsh braking by looking ahead and anticipating
+          traffic conditions. See congestion ahead? Ease off the accelerator
+          and slow naturally, rather than keeping the power on and braking
+          close to the queue. Choose the highest gear you can as often as you
+          can and take your foot off the accelerator as frequently as
+          possible.<br />
+        </p>
+      </div>
+      <div class="content">
+        <h3 class="heading">Keep your car maintained</h3>
+        <p>
+          A car isn’t a living thing, so it won’t always tell you that
+          something’s not right.<br />
+
+          <br />For a car to operate as close to the peak of its efficiency as
+          possible, it’ll need to be serviced by a reputable mechanic
+          according to the manufacturer’s required schedule.<br />
+
+          <br />Even tackling mechanical jobs like cleaning spark plugs and
+          changing the engine oil can help fuel economy. Keeping on top of car
+          maintenance in general will help your car perform at its best.<br />
+        </p>
+      </div>
+      <div class="content">
+        <h3 class="heading">Consider the weight of fuel</h3>
+        <p>
+          Here’s one to ponder: you could save perhaps 1% of your fuel
+          consumption by only half filling your car – because of the added
+          weight of carrying a full tank of fuel.<br />
+
+          <br />Of course, if you have to drive 20 miles to fill up that
+          saving may be undone by cost of the extra miles. Nevertheless, it’s
+          worth considering whether visiting twice as many times and half
+          filling will save you money overall.<br />
+
+          <br />Tracking your fuel costs and other car expenses is a good way
+          to decide which changes will be most beneficial for you. Give it
+          some trial and error until you see which tips suit your needs.<br />
+        </p>
+      </div>
+      <div class="content">
+        <h3 class="heading">
+          Does using the heating or aircon in my car use extra fuel?
+        </h3>
+        <p>
+          Sadly, cranking up the heat in your car does use extra fuel, so you
+          may want to cut down on your usage if your aim is to increase your
+          mpg.<br />
+
+          <br />We don’t want to be one of those people, but layering up might
+          be a better choice than reaching for the heated seat button if you
+          really want to be efficient.<br />
+
+          <br />Turning on your air-conditioning can also use more fuel, but
+          opening a window can also increase drag on your vehicle and drive up
+          your fuel consumption. You might want to experiment between the two
+          and see which one offers a lower increase in fuel consumption.<br />
+        </p>
+      </div>
+      <div class="content">
+        <h3 class="heading">Check your tyre pressures</h3>
+        <p>
+          Tyre pressure is easily one of the most common causes of poor fuel
+          economy in cars. <br />
+
+          <br />The wrong pressure in a car’s tyres can be unsafe, speed up
+          the rate at which they wear – and it can make your car use too much
+          fuel.<br />
+
+          <br />Ever pedalled a bicycle with nearly flat tyres? It’s a right
+          old workout. It’s the same thing when it comes to under-filled tyres
+          on a car. Best to keep an eye on pressures with a proper gauge, and
+          make sure they’re topped up correctly as per the car manufacturer’s
+          handbook.<br />
+        </p>
+      </div>
+      <div class="content">
+        <h3 class="heading">Plan your route carefully</h3>
+        <p>
+          The most fuel-efficient roads aren’t slow city streets or quiet
+          country roads – they’re motorways. They give the best chance of
+          staying at a smooth constant speed in your highest gear, avoiding
+          harsh braking and hard revving. It’s why satnavs often suggest using
+          a motorway for a route even if it adds a few miles to the total
+          journey.<br />
+
+          <br />Also, consider that a warm engine is much more fuel-efficient
+          than one starting from cold. This means that one longer combined
+          journey is better for your pocket than lots of little ones.<br />
+        </p>
+      </div>
+      <div class="content">
+        <h5>
+          These are the most popular ways to start saving fuel,
+          <a
+            href="https://www.lookers.co.uk/blog/10-best-fuel-saving-tips-for-motorists"
+            >Click here to see more tips.</a
+          >
+        </h5>
+        <a href="index.html">Back to Homepage</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- end Mapbox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js'></script>
+  <script src="./assets/js/keys.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
